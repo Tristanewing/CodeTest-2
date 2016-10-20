@@ -1,0 +1,11 @@
+
+.bold {
+	font-weight:bold;
+}
+
+
+.scroll {
+	position: absolute;
+	right: -200px;
+	width: 200px;
+}

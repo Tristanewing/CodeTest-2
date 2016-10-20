@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Code Test 2</title>
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- endbower -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="/styles/index.css">
+	<!-- endinject -->
+</head>
+
+<body onload="animate_string('rotate')">
+		<h1><pre id="rotate">Origin Code Academy Rocks!</h1></pre>
+	
+
+	<p id="time"></p>
+
+	<p> <span class="bold">Beach</span> Towel</p>
+	<p> <span class="bold">Suntan</span> Lotion</p>
+	<p> <span class="bold">Mask</span>, Fins and Snorkel</p>
+	<p> <span class="bold">Boogie</span> Board</p>
+	<button id="button">Click Me!</button>
+	<p id="paragraph"></p>
+	<p id="paragraph2"></p>
+	
+
+
+	<div style="background-color:red"> 
+		<p id="color">Click the button to change the background color of this paragraph.</p> 
+
+	</div>
+	<button id="button2">Change Color</button> 
+
+	<div>
+		<h1> Questions </h1>
+		<ol>
+			<li>You have to have ng-app in your html and an ng-module in you js that links them.</li>
+			<li>A controller is what you write the functions that you want to push into the html. The controller can take from both the html and factory.</li>
+			<li>ng-model is like an id that you call in you controller with (vm.). ng-models have whatever name you decide to give them.</li>
+			<li>Angular directive attributes take either expressions or interpolation markup with embedded expressions. It is considered bad practice to embed interpolation markup inside an expression.</li>
+			<li> $scope is what you use to grap big information like an array of things. </li>
+			<li>A dependency injection is what you have to inject to tell your files that you are going to use what you are gonna use. for example if you are using $http, $q, $scope, or and other things you must put them in your dependencies.</li>
+			<li> Two-way binding is when you bind two things together so if you change them in one place they will change in the other place.</li>
+			<li>'controller as' is how you define how you are going to call things. (vm.) is used for one but you can make it anything. Example: controllerAs: 'Tristan'. Also you have to clarify to your controller what you are using, so you would put the name of your controller and then 'as vm' or 'as Tristan' whatever you are using.</li>
+			<li>It's a framework of clean code writing.</li>
+			<li> Factory is mostly preferable in all cases. It can be used when you have constructor function which needs to be instantiated in different controllers. Service is a kind of Singleton Object. The Object return from Service will be same for all controller. </li>
+		</ol>
+
+	</div>
+
+
+	<!-- bower:js -->
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/jquery/dist/jquery.js"></script>
+	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<!-- endbower -->
+	<!-- inject:js -->
+	<script src="/app/index.js"></script>
+	<!-- endinject -->
+</body>
+</html>
